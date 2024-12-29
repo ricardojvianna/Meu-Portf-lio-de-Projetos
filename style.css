@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    box-sizing: border-box;
+    font-family: "Josefin Sans", serif, sans-serif;
+
+}
+
+:root {
+    --bg-color: #191919;
+    --portfolio-color: #ffffff;
+    --span-color: #FF7F11;
+    /* --span-color: #FFAD05; */
+    --bg-section: #131215;
+    --color-border: 1px solid #ff0f0f;
+
+}
+
+.wrapping {
+    height: 100vh;
+    width: 100vw;
+    background-image: url(./img/background-prog.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right;
+    background-color: var(--bg-color);
+
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+}
+
+.portfolio {
+    color: var(--portfolio-color);
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.portfolio span {
+    color:var(--span-color);
+}
+
+li {
+    color: var(--portfolio-color);
+    list-style: none;
+    font-size: 25px;
+    font-weight: 600;
+    display: inline-block;
+    margin-right: 35px;
+    cursor: pointer;
+    transition: 300ms;
+}
+
+li:hover {
+    color: var(--span-color);
+    /* transition: 0.5s; */
+}
+
+.meu-nome {
+    position: absolute;
+    top: 50%;
+    left: 5%;
+}
+
+h1 {
+    font-size: 70px;
+    font-weight: 600;
+    color: var(--portfolio-color);
+}
+
+h1 span {
+    color: var(--span-color);
+}
+
+.meu-nome h3 {
+    color: var(--portfolio-color);
+    font-size: 22px;
+    font-weight: 500;
+}
+
+section {
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    padding: 60px 10%;
+    background-color: var(--bg-section);
+    position: absolute;
+    top: 80%;
+    
+
+}
+
+section img {
+    width: 200px;
+    border-radius: 100%;;
+    border: 2px solid var(--span-color);
+    margin-right: 20px;
+}
+
+section div h2 {
+    color: var(--span-color);
+    font-size: 70px;
+}
+
+section div p {
+    font-size: 22px;
+    font-weight: 300;
+    text-align: justify;
+    color: var(--portfolio-color);
+    padding-right: 30px;
+    margin: 25px 0;
+}
+
+section div button {
+    color: var(--portfolio-color);
+    background: var(--span-color);
+    height: 50px;
+    width: 180px;
+    font-size: 18px;
+    font-weight: 400;
+    border: none;
+    border-radius: 26px;
+    cursor: pointer;
+    transition: 500ms;
+
+}
+
+section div button:hover {
+    background-color: var(--bg-section);
+    border: 3px solid var(--span-color);
+}
