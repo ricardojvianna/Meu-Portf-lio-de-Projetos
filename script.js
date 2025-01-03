@@ -1,6 +1,7 @@
 let formulario = document.querySelector(".talk-me")
 let mascara = document.querySelector(".mascara-form")
-let tela = document.querySelector(".tela")
+let botaoEmail = document.querySelector(".button-about")
+
 
 function aparecerFormulario () {
     formulario.style.left = "600px"
@@ -12,9 +13,10 @@ function sumirFormulario() {
     mascara.style.visibility = "hidden"
 }
 
-function sairFormulario() {
-    formulario.style.left = "-320px"
-    mascara.style.visibility = "hidden"
-}
+window.document.addEventListener('click', (event) => {
+    if (!formulario.contains(event.target) && event.target !== botaoEmail) {
+        formulario.style.left = ("-320px")
+        mascara.style.visibility = ("hidden") 
+    }
+})
 
-tela.addEventListener("click", sairFormulario())
