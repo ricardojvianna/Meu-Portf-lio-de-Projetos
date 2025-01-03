@@ -13,15 +13,23 @@
     <title>Ricardo Vianna</title>
 </head>
 
-<body>
+<body class="tela">
     <div class="wrapping" id="home">
         <nav>
             <h2 class="portfolio">Port<span>fólio</span></h2>
             <ul>
-                <li><a class="link-menu" href="#home">Home</a></li>
-                <li><a class="link-menu" href="#sobre">Sobre</a></li>
-                <li><a class="link-menu" href="#projetos-id">Projetos</a></li>
-                <li><a class="link-menu" href="#fale-comigo">Fale Comigo</a></li>
+                <a class="link-menu" href="#home">
+                    <li>Home</li>
+                </a>
+                <a class="link-menu" href="#sobre">
+                    <li>Sobre</li>
+                </a>
+                <a class="link-menu" href="#projetos-id">
+                    <li>Projetos</li>
+                </a>
+                <a class="link-menu" href="#fale-comigo">
+                    <li>Fale Comigo</li>
+                </a>
             </ul>
         </nav>
 
@@ -42,10 +50,25 @@
                 experiência para o usuário. Além disso, sou dedicado a aprimorar minhas habilidades e me manter
                 atualizado com as tendências e tecnologias da área.
             </p>
-            <button>Entre em contato</button>
+            <button onclick="aparecerFormulario()" class="button-about">Entre em contato</button>
         </div>
 
     </section>
+
+    <form action="https://formsubmit.co/comunicacao.vianna@gmail.com" method="POST" class="talk-me">
+        <strong> Por Favor, deixe seu recado:</strong>
+        <input placeholder="Seu Nome" , type="text" , name="name">
+        <input placeholder="E-mail de Contato" , type="email" , name="email"> 
+        <textarea placeholder="Digite sua mensagem!" , name="message"></textarea>
+         <!--   ***  <input type="hidden" name="_captcha" value="false" />  ***
+        essa linha desabilita o teste de robô, tirando um pouco de segurança do processo -->
+        <button onclick="sumirFormulario()">Enviar</button>
+    </form>
+
+    <div class="mascara-form">
+        <!-- mascará escura que fica por trás do form, quando acionado -->
+    </div>
+
 
     <div id="projetos-id" class="projetos">
         <h2>Principais Projetos</h2>
@@ -56,36 +79,42 @@
                 <img src="./img/logo-cafeteria.png" alt="">
                 <h5>Cafeteria</h5>
                 <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate id saepe at in? Delectus aperiam quidem, magnam eos temporibus corporis! Inventore dolor amet porro nemo suscipit libero sed iure! Veniam?
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate id saepe at in? Delectus aperiam
+                    quidem, magnam eos temporibus corporis! Inventore dolor amet porro nemo suscipit libero sed iure!
+                    Veniam?
                 </p>
                 <a href="https://timely-liger-c6f8da.netlify.app/" target="_blank">Visualizar Projeto</a>
-                    
+
             </div>
-    
+
             <div class="card">
                 <img src="./img/logo-mario.png" alt="">
                 <h5>Super Mário</h5>
                 <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate id saepe at in? Delectus aperiam quidem, magnam eos temporibus corporis! Inventore dolor amet porro nemo suscipit libero sed iure! Veniam?
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate id saepe at in? Delectus aperiam
+                    quidem, magnam eos temporibus corporis! Inventore dolor amet porro nemo suscipit libero sed iure!
+                    Veniam?
                 </p>
                 <a href="https://ricardojvianna.github.io/3--projeto-jogo-mario/" target="_blank">Visualizar Projeto</a>
-                    
+
             </div>
-    
+
             <div class="card">
                 <img src="./img/logo-netflix.png" alt="">
                 <h5>NetFlix</h5>
                 <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate id saepe at in? Delectus aperiam quidem, magnam eos temporibus corporis! Inventore dolor amet porro nemo suscipit libero sed iure! Veniam?
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate id saepe at in? Delectus aperiam
+                    quidem, magnam eos temporibus corporis! Inventore dolor amet porro nemo suscipit libero sed iure!
+                    Veniam?
                 </p>
                 <a href="https://willowy-rabanadas-9396bf.netlify.app/" target="_blank">Visualizar Projeto</a>
-                    
+
             </div>
-    
+
         </div>
 
-       
-        
+
+
     </div>
 
     <footer id="fale-comigo">
@@ -93,13 +122,18 @@
         <p>Para mais informações</p>
 
         <div class="social">
-            <a href="https://www.linkedin.com/in/vianna-ricardo-dev" target="_blank"><img src="./img/linkedin.png" alt="logo-linkedin"></a>
+            <a href="https://www.linkedin.com/in/vianna-ricardo-dev" target="_blank"><img src="./img/linkedin.png"
+                    alt="logo-linkedin"></a>
             <a href="https://wa.me/16996130908" target="_blank"><img src="./img/whatsapp.png" alt="logo-whatsapp"></a>
 
         </div>
 
     </footer>
 
+    <a href="#home"><img src="./img/home.png" alt="icone-home" class="icon-home"></a>
+
 </body>
+
+<script src="./script.js"></script>
 
 </html>

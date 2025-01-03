@@ -137,6 +137,92 @@ section div button:hover {
     border: 3px solid var(--span-color);
 }
 
+.talk-me{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: absolute;
+    left: -320px;  /* -320px */
+    bottom: -400px;
+    transition: left 1s linear;
+    background-color: var(--span-color);
+    height: 365px;
+    width: 335px;
+    border: none;
+    border-radius: 10px;
+    padding: 20px;
+    gap: 10px;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 600;
+    color: var(--portfolio-color);
+    z-index: 4;
+
+}
+
+.talk-me strong {
+    margin-bottom: 10px;
+
+}
+
+.talk-me input {
+    width: 250px;
+    height: 30px;
+    font-size: 1.2rem;
+    font-weight: 500;
+    padding-left: 10px;
+    border: none;
+    border-radius: 13px; 
+
+}
+
+.talk-me textarea {
+    width: 250px;
+    height: 120px;
+    font-size: 1.2rem;
+    font-weight: 500;
+    padding-top: 10px;
+    padding-left: 10px;
+    border: none;
+    border-radius: 13px; 
+    outline-color: var(--color-red);
+
+}
+
+.talk-me button {
+    width: 150px;
+    height: 40px;
+    background-color: var(--color-red);
+    border: none;
+    border-radius: 20px;
+    font-size: 1.2rem;
+    font-weight: 900;
+    color: var(--portfolio-color);
+    padding: 5px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.talk-me button:hover {
+    transform: scale(1.1);
+
+}
+
+.mascara-form {
+
+    visibility: hidden;
+    /* essa propriedade deixa a mascara visivel ou não, quando ela começa hidden, 
+    ela já inicia escondida */
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    background: linear-gradient(109deg, rgba(10, 12, 16, 0.99) 15%, rgba(10, 12, 16, 0.7) 50%, rgba(10, 12, 16, 0.99) 85%);
+    z-index: 3;
+}
+
+
 .projetos {
     background-color: var(--bg-color);
     padding-top: 50px;
@@ -245,3 +331,20 @@ footer p {
     transform: scale(1.3);
     transition: 500ms;
 }
+
+.icon-home {
+  width: 36px;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  margin-right: 1.625rem;
+  margin-bottom: 1.625rem;
+  cursor: pointer;
+  transition: 500ms;
+
+}
+
+.icon-home:hover {
+    transform: scale(1.3);
+  }
+  
