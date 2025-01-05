@@ -225,8 +225,8 @@ section div button:hover {
 
 .projetos {
     background-color: var(--bg-color);
-    padding-top: 50px;
-    padding-bottom: 100px;
+    padding-top: 15px;
+    padding-bottom: 30px;
         
 }
 
@@ -234,6 +234,7 @@ section div button:hover {
     color: var(--portfolio-color);
     font-size: 75px;
     text-align: center;
+    margin-top: 20px;
 }
 
 .card {
