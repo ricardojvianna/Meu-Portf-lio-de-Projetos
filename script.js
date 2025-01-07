@@ -4,7 +4,7 @@ let botaoEmail = document.querySelector(".button-about")
 
 
 function aparecerFormulario () {
-    formulario.style.left = "600px"
+    formulario.style.left = "100px"
     mascara.style.visibility = "visible"
 }
 
